@@ -25,12 +25,12 @@ form.addEventListener("click",function(){
     checkPassword();
 })
 
-
-
 function checkPassword(){ 
     if(email.value==""){
         btn.disabled = true;
-    }else{
+
+    }
+    else{
 
         if(cpassword.value && password.value >=8 ){
             
@@ -52,4 +52,24 @@ password.addEventListener("keyup",()=>{
 
 cpassword.addEventListener("keyup",checkPassword);
 
+const lgbtn =document.getElementById('lgbtn')
+const lemail = document.getElementById('lemail')
+const lpwd = document.getElementById('lpwd')
+const form2 = document.getElementById('form2')
+lgbtn.disabled = true;
 
+form2.addEventListener('click',function(){
+    lgpwd();
+})
+
+
+function lgpwd(){
+    if(password.value==lpwd.value){
+        lgbtn.disabled= false;
+    }
+}
+lpwd.addEventListener("keyup",()=>{
+    if(lpwd.value.length !=0){
+        lgpwd();
+    }
+}) 
