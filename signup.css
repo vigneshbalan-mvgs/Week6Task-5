@@ -99,3 +99,9 @@
 .removecontainer{
     visibility: hidden;
 }
+
+#lgbtn a{
+    text-decoration: none;
+    color: white;
+    
+}

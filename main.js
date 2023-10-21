@@ -26,6 +26,7 @@ form.addEventListener("click",function(){
 })
 
 
+
 function checkPassword(){ 
     if(email.value==""){
         btn.disabled = true;
