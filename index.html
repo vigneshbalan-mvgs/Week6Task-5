@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container" id="formcontainer">
+        <form id="form" onclick="checkpasssword()">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="pwd" placeholder="Password" minlength="8" maxlength="19" required
+            </div>
+            <div>
+                <label for="password">Confirm password</label>
+                <input type="password" id="cpwd" placeholder="Confirm Password"required>
+            </div>
+            <button class="btn btn-dark" id="sgbtn" > Submit</button>
+        </form>
+    </div>
+    
+
+    <!-- //popup  -->
+    <div class="popup" id="popup">
+        <i class="fa-solid fa-circle-check" id="i"></i>
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted.Thanks</p>
+        <button type="button" id="btn" onclick="closePopup()">Ok</button>
+
+    </div>
+
+    <div class="container " id="logincontainer">
+
+        <div id="form">
+            <div>
+                <label >Email</label>
+                <input type="email" id="lemail" name="Email" placeholder="Email" required>
+            </div>
+            <div>
+                <label >Password</label>
+                <input type="password" id="lpwd" name="password" placeholder="Password" minlength="8" maxlength="19" required
+            </div>
+            <button type="submit" class="btn btn-dark" id="sgbtn">Submit</button>
+        </div>
+    </div>
+    
+
+
+   <script src="main.js"></script> 
+</body>
+</html>

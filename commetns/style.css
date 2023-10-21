@@ -1,0 +1,7 @@
+#carddesign:hover{
+    scale: 105%;
+    animation: ease-in-out .6s ;
+}
+#userName{
+    font-size: 1.5rem;
+}
