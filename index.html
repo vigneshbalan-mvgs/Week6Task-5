@@ -13,7 +13,8 @@
 <body>
     
     <div class="container" id="formcontainer">
-        <form id="form" onclick="checkpasssword()">
+        <div id="form">
+            <div><h3 class="text-center">Signup</h3></div>
             <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Name" required>
@@ -30,21 +31,15 @@
                 <label for="password">Confirm password</label>
                 <input type="password" id="cpwd" placeholder="Confirm Password"required>
             </div>
-            <button class="btn btn-dark" id="sgbtn" > Submit</button>
-        </form>
+            <p id="message"></p>
+            <button  class="btn btn-dark" id="sgbtn" onclick="openPopup()"> Submit</button>
+        </div>
     </div>
     
 
-    <!-- //popup  -->
-    <div class="popup" id="popup">
-        <i class="fa-solid fa-circle-check" id="i"></i>
-        <h2>Thank You!</h2>
-        <p>Your details has been successfully submitted.Thanks</p>
-        <button type="button" id="btn" onclick="closePopup()">Ok</button>
+    <!-- login form -->
 
-    </div>
-
-    <div class="container " id="logincontainer">
+    <div class="container" id="logincontainer">
 
         <div id="form">
             <div>
@@ -55,10 +50,18 @@
                 <label >Password</label>
                 <input type="password" id="lpwd" name="password" placeholder="Password" minlength="8" maxlength="19" required
             </div>
-            <button type="submit" class="btn btn-dark" id="sgbtn">Submit</button>
+            <button type="submit" class="btn btn-dark" id="sgbtn"><a href="commetns/comment.html">Submit</a></button>
         </div>
     </div>
-    
+
+    <!-- //popup  -->
+    <div class="popup" id="popup">
+        <i class="fa-solid fa-circle-check" id="i"></i>
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted.Thanks</p>
+        <button type="button" id="btn" onclick="closePopup()">Ok</button>
+
+    </div>
 
 
    <script src="main.js"></script> 

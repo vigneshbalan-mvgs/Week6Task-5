@@ -92,3 +92,10 @@
     padding: 30px;
     visibility: hidden;
 }
+
+.showcontainer{
+    visibility: visible !important;
+}
+.removecontainer{
+    visibility: hidden;
+}
